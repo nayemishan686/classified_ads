@@ -59,10 +59,11 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
-    autoplay: true,
-    autoplayTimeout: 1000,
+    autoplay: false,
+    autoplayTimeout: 5000,
     autoplayHoverPause: false,
     dots: false,
+    navText: ['<i class="far fa-arrow-alt-circle-left"></i>', '<i class="far fa-arrow-alt-circle-right"></i>'],
     responsive: {
         0: {
             items: 1
