@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
 :root {
     --red: #ff3838;
     --gray: #777777;
@@ -14,7 +13,7 @@
     --dark: #0d0633;
     --border: #e8e8e8;
     --heading: #232d3b;
-    --primary: #0044bb;
+    --primary: #0AA1DD;
     --primary-light: #75a7ff;
     --primary-hover: #0022aa;
     --view: #8edb04;
@@ -93,13 +92,14 @@ h1 {
     font-weight: 700;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
-    
 }
 
 h2 {
     font-size: 38px;
     line-height: 46px;
-    font-weight: 700
+    font-weight: 700;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
 }
 
 h3 {
@@ -475,7 +475,6 @@ textarea.form-control {
     .nav-tabs li .nav-link {
         padding: 10px 0px
     }
-
     .tab-pane {
         padding: 0px 15px
     }
@@ -534,19 +533,15 @@ textarea.form-control {
     .section {
         padding: 60px 0px 0px
     }
-
     .inner-section {
         margin-bottom: 60px
     }
-
     .section-side-heading {
         margin-bottom: 60px
     }
-
     .section-center-heading {
         margin-bottom: 30px
     }
-
     .section-center-heading p {
         width: 100%;
         font-size: 16px;
@@ -565,7 +560,6 @@ textarea.form-control {
     .section {
         padding: 80px 0px 0px
     }
-
     .inner-section {
         margin-bottom: 80px
     }
@@ -705,7 +699,6 @@ textarea.form-control {
     .table-scroll {
         overflow-x: scroll
     }
-
     .table-list {
         width: 900px
     }
@@ -1175,19 +1168,23 @@ textarea.form-control {
     text-decoration: underline
 }
 
+
 /*********************
     Category Section
 **********************/
-.category-section{
+
+.category-section {
     padding: 80px 0px;
     background-color: var(--chalk);
 }
-.cat-heading{
+
+.cat-heading {
     color: var(--dark);
     text-align: center;
     margin-bottom: 40px;
-} 
-.cat-box{
+}
+
+.cat-box {
     background-color: var(--white);
     box-shadow: 2px 3px 5px 1px var(--border);
     padding: 40px;
@@ -1195,14 +1192,17 @@ textarea.form-control {
     z-index: 0;
     transition: 0.5s all;
     margin: 20px 5px;
+    border-radius: 40px 0 0 0;
 }
-.cat-box:hover{
+
+.cat-box:hover {
     z-index: 1;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     cursor: pointer;
 }
-.cat-box::after{
+
+.cat-box::after {
     content: '';
     width: 100%;
     height: 3px;
@@ -1213,25 +1213,35 @@ textarea.form-control {
     left: 0;
 }
 
-.cat-box .cat-avatar img{
-    height: 80px;
-    width: 80px;
+.cat-box .cat-avatar img {
+    height: 50px;
+    width: 50px;
 }
-.cat-box .cat-content h3{
+
+.cat-box .cat-content h3 {
     color: var(--dark);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin-top: 10px;
 }
 
 
+/**********************
+    Featured Product
+**********************/
 
+.featured-part {
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+}
 
 .product-card {
     border-radius: 8px;
     margin-bottom: 30px;
     background: var(--chalk);
     overflow: hidden;
+    position: relative;
     border: 1px solid var(--border);
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -1242,7 +1252,7 @@ textarea.form-control {
 
 .product-card:hover {
     background: var(--white);
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1)
+    box-shadow: 0px 10px 25px 0px rgba(3, 54, 82, 0.1)
 }
 
 .product-card:hover .product-media::before {
@@ -1334,152 +1344,139 @@ textarea.form-control {
     color: var(--chalk)
 }
 
-.product-action .view i {
-    color: var(--view)
-}
-
-.product-action .click i {
-    color: var(--click)
-}
-
-.product-action .rating i {
-    color: var(--rating)
-}
-
 .product-content {
-    padding: 0px 15px
+    padding: 20px 15px;
+    position: relative;
 }
 
-.product-category {
-    margin-bottom: 12px;
-    padding: 10px 0px 8px;
-    border-bottom: 1px solid var(--border)
-}
-
-.product-category li i {
-    font-size: 13px;
-    color: #999999;
-    margin-right: 8px
-}
-
-.product-category .breadcrumb-item {
-    font-size: 13px;
-    color: var(--gray);
-    white-space: nowrap
-}
-
-.product-category .breadcrumb-item::before {
-    color: var(--gray)
-}
-
-.product-category .breadcrumb-item a {
-    color: var(--gray)
-}
-
-.product-category .breadcrumb-item a:hover {
-    color: var(--primary)
-}
-
-.product-title {
-    margin-bottom: 5px
-}
-
-.product-title a {
-    color: var(--heading);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s
-}
-
-.product-title a:hover {
-    color: var(--primary)
-}
-
-.product-meta {
-    margin-bottom: 12px
-}
-
-.product-meta span {
-    font-size: 13px;
-    margin-right: 15px;
-    white-space: nowrap
-}
-
-.product-meta i {
-    margin-right: 5px;
-    color: #999999
-}
-
-.product-info {
-    padding: 10px 0px;
+.product-content .content-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid var(--border)
+    margin-bottom: 10px;
+}
+
+.content-top .product-cat {
+    background-color: var(--primary);
+    padding: 1px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.content-top i {
+    background-color: var(--white);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.content-top i:hover {
+    color: var(--primary);
+}
+
+.product-star ul li {
+    display: inline-block;
+}
+
+.product-star i {
+    color: var(--rating);
+}
+
+.owl-theme .owl-nav {
+    margin: 0;
+}
+
+.owl-nav {
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+
+.owl-nav button span {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: var(--white);
+}
+
+.content-bottom span {
+    padding: 0 5px 0 0;
+    color: var(--primary);
 }
 
 .product-price {
-    font-weight: 700;
-    font-family: sans-serif
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary);
 }
 
-.product-price span {
-    font-size: 12px;
-    font-weight: 400;
-    margin-left: 3px;
-    color: var(--gray);
-    white-space: nowrap;
-    text-transform: capitalize
+
+/***************************
+     How It Worl Section
+****************************/
+
+.how-it-work {
+    padding: 80px;
+    background-color: var(--chalk);
 }
 
-.product-btn a,
-.product-btn button {
-    margin-left: 8px;
-    padding-left: 12px;
-    color: var(--gray);
-    border-left: 1px solid var(--border);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s
+.work-heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 20px;
 }
 
-.product-btn a:hover,
-.product-btn button:hover {
-    color: var(--primary)
+.work-heading span {
+    color: var(--primary);
 }
 
-.product-btn .fas.fa-heart {
-    color: var(--primary)
+.work-box {
+    background-color: var(--white);
+    padding: 40px 30px;
+    margin: 20px 0px;
+    box-shadow: 8px 8px 10px var(--gray);
+    border-radius: 0 0 0 30px;
 }
 
-.product-card.standard {
+.top-work {
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: space-between;
 }
 
-.product-card.standard .product-media {
-    margin: 0px 12px
+.work-item i {
+    font-size: 30px;
+    color: var(--orange);
 }
 
-.product-card.standard .product-img img {
-    width: 250px;
-    height: auto
+.work-item1 i {
+    font-size: 30px;
+    color: var(--blue);
 }
 
-.product-card.standard .product-content {
-    width: 100%
+.work-item2 i {
+    font-size: 30px;
+    color: var(--primary-hover);
 }
 
-.ad-standard .product-card.standard .product-media {
-    margin: 15px 15px
+.work-description h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0;
 }
 
-.ad-standard .product-card.standard .product-img img {
-    width: 280px
+.work-description p {
+    font-size: 14px;
+}
+
+.work-number h2 {
+    font-size: 100px;
+    letter-spacing: 10px;
+    color: var(--chalk);
 }
 
 @media (min-width: 380px) and (max-width: 575px) {
@@ -1490,17 +1487,14 @@ textarea.form-control {
 }
 
 @media (max-width: 575px) {
-
     .product-card.standard,
     .ad-standard .product-card.standard {
         flex-direction: column
     }
-
     .product-card.standard .product-media,
     .ad-standard .product-card.standard .product-media {
         margin: 0px
     }
-
     .product-card.standard .product-img img,
     .ad-standard .product-card.standard .product-img img {
         width: 100%;
@@ -1509,7 +1503,6 @@ textarea.form-control {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-
     .product-card.standard .product-img img,
     .ad-standard .product-card.standard .product-img img {
         width: 225px
@@ -1685,27 +1678,22 @@ textarea.form-control {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px
     }
-
     .feature-img img {
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px
     }
-
     .feature-wish {
         top: 15px;
         right: 15px
     }
-
     .feature-title {
         font-size: 18px;
         line-height: 26px
     }
-
     .feature-meta {
         display: flex;
         flex-direction: column
     }
-
     .feature-price {
         margin: 0px 0px 5px
     }
@@ -2873,21 +2861,17 @@ textarea.form-control {
     .review-item {
         padding: 20px 20px
     }
-
     .review-author {
         padding-top: 15px;
         margin: 15px 0px 0px 30px
     }
-
     .review-profile {
         flex-direction: column;
         align-items: flex-start
     }
-
     .review-avatar {
         margin: 0px 0px 15px
     }
-
     .review-desc {
         font-size: 15px
     }
@@ -2900,9 +2884,11 @@ textarea.form-control {
     }
 }
 
+
 /********************
     Header - Part
 *********************/
+
 .header-part {
     background: var(--white)
 }
@@ -3162,34 +3148,27 @@ textarea.form-control {
     .header-part .container {
         padding: 15px
     }
-
     .header-content {
         width: 100%;
         flex-direction: column;
         justify-content: center
     }
-
     .header-logo {
         margin: 0px
     }
-
     .header-user {
         display: none
     }
-
     .search-btn {
         display: block
     }
-
     .header-left {
         width: 100%;
         justify-content: space-between
     }
-
     .header-right {
         display: none
     }
-
     .header-form {
         margin-top: 15px;
         display: none
@@ -3373,7 +3352,6 @@ textarea.form-control {
         visibility: visible;
         opacity: 1
     }
-
     .sidebar-part.active .sidebar-body {
         left: 0px;
         width: 100%
@@ -3554,16 +3532,13 @@ textarea.form-control {
 }
 
 @media (max-width: 575px) {
-
     .filter-label,
     .filter-action {
         display: none
     }
-
     .filter-show {
         width: 80px
     }
-
     .filter-short {
         width: 130px
     }
@@ -3809,7 +3784,6 @@ textarea.form-control {
         margin-bottom: 30px;
         flex-direction: column
     }
-
     .page-info {
         margin-bottom: 15px
     }
@@ -4051,11 +4025,9 @@ textarea.form-control {
         align-items: flex-start;
         flex-direction: column
     }
-
     .suggest-date {
         margin-bottom: 12px
     }
-
     .blog-icon li {
         margin: 6px
     }
@@ -4066,11 +4038,9 @@ textarea.form-control {
         align-items: flex-start;
         flex-direction: column
     }
-
     .suggest-date {
         margin-bottom: 12px
     }
-
     .blog-icon li {
         margin: 6px
     }
@@ -4113,11 +4083,9 @@ textarea.form-control {
     .newsletter {
         margin-bottom: 60px
     }
-
     .news-content {
         margin: 0px 0px 30px
     }
-
     .news-form {
         margin: 0px
     }
@@ -4127,15 +4095,12 @@ textarea.form-control {
     .news-form input {
         padding: 0px 75px 0px 20px
     }
-
     .news-form .btn {
         padding: 10px 20px
     }
-
     .news-form .btn i {
         margin-right: 0px
     }
-
     .news-form .btn span {
         display: none
     }
@@ -4332,13 +4297,11 @@ textarea.form-control {
     .footer-content {
         margin-bottom: 30px
     }
-
     .footer-end-content {
         padding: 25px 0px;
         flex-direction: column;
         text-align: center
     }
-
     .footer-end-content p {
         margin-bottom: 10px
     }
@@ -4348,16 +4311,13 @@ textarea.form-control {
     .footer-part {
         padding: 60px 0px 60px
     }
-
     .footer-content,
     .footer-info {
         margin-left: 30px
     }
-
     .footer-card-content {
         flex-direction: column
     }
-
     .footer-payment,
     .footer-option {
         margin-bottom: 30px
@@ -4368,11 +4328,9 @@ textarea.form-control {
     .footer-part {
         padding: 80px 0px 60px
     }
-
     .footer-card-content {
         margin-top: 20px
     }
-
     .footer-payment a,
     .footer-payment button,
     .footer-option a,
@@ -4387,17 +4345,14 @@ textarea.form-control {
     .footer-part {
         padding: 90px 0px 60px
     }
-
     .footer-card-content {
         margin-top: 20px
     }
-
     .footer-payment,
     .footer-option,
     .footer-app {
         text-align: center
     }
-
     .footer-payment a,
     .footer-payment button,
     .footer-option a,
@@ -4667,7 +4622,6 @@ textarea.form-control {
     .dash-menu-list {
         overflow-x: scroll
     }
-
     .dash-menu-list ul {
         width: 900px
     }
@@ -4677,42 +4631,33 @@ textarea.form-control {
     .single-banner {
         padding: 60px 0px 160px
     }
-
     .dash-header-card {
         padding: 20px 20px 0px 20px
     }
-
     .dash-header-left {
         flex-direction: column;
         align-items: flex-start
     }
-
     .dash-avatar {
         margin-right: 0px;
         margin-bottom: 5px
     }
-
     .dash-intro h5 {
         margin-bottom: 12px
     }
-
     .dash-meta {
         margin-bottom: 25px
     }
-
     .dash-header-right {
         flex-direction: column
     }
-
     .dash-focus {
         margin-bottom: 20px;
         margin-right: 0px
     }
-
     .dash-focus:last-child {
         margin-bottom: 0px
     }
-
     .dash-header-alert button {
         margin-left: 0px
     }
@@ -4722,7 +4667,6 @@ textarea.form-control {
     .dash-header-right {
         margin-top: 30px
     }
-
     .dash-focus h2 {
         font-size: 32px
     }
@@ -4732,7 +4676,6 @@ textarea.form-control {
     .single-banner {
         padding: 80px 0px 180px
     }
-
     .dash-header-right {
         margin-top: 30px
     }
@@ -4742,7 +4685,6 @@ textarea.form-control {
     .dash-avatar {
         margin-right: 25px
     }
-
     .dash-avatar a img {
         width: 120px
     }
