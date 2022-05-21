@@ -1600,6 +1600,114 @@ textarea.form-control {
 
 
 /************************
+  Counter Overview  Section
+*************************/
+
+.counter-overview {
+    padding: 60px 0;
+    background: linear-gradient( #457fca, #5691c8);
+}
+
+.counter-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.counter-details i {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.counter-details h3 {
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.counter-details p {
+    color: var(--chalk);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/************************
   Testimonial  Section
 *************************/
 
@@ -1799,471 +1907,231 @@ textarea.form-control {
 
 
 /********************
-    Section
+    Intro Section
 ********************/
 
-.feature-card {
+.intro-part {
+    padding: 80px 0px 80px;
     position: relative;
-    overflow: hidden
+    background: linear-gradient(to right, #7474bf, #348ac7);
 }
 
-.feature-card::before {
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    background: linear-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9) 90%)
+.intro-part .section-center-heading {
+    margin-bottom: 0px
 }
 
-.feature-img {
-    display: block
-}
-
-.feature-img img {
-    width: 100%;
-    border-radius: 8px
-}
-
-.feature-badge {
-    position: absolute;
-    top: 20px;
-    left: -80px;
-    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.3);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s
-}
-
-.feature-badge:hover {
-    left: 0px
-}
-
-.feature-wish {
-    position: absolute;
-    top: 20px;
-    right: 20px
-}
-
-.feature-wish i {
-    width: 38px;
-    height: 38px;
-    font-size: 14px;
-    line-height: 38px;
-    border-radius: 8px;
-    text-align: center;
-    color: var(--border);
-    background: rgba(0, 0, 0, 0.3)
-}
-
-.feature-wish.active i {
+.intro-part .section-center-heading h2 {
+    font-size: 45px;
+    line-height: 55px;
     color: var(--white);
-    background: var(--primary);
-    text-shadow: var(--primary-tshadow)
+    margin-bottom: 22px
 }
 
-.feature-content {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    padding: 0px 30px 25px
-}
-
-.feature-category {
-    margin-bottom: 15px
-}
-
-.feature-category .flat-badge {
-    margin-right: 12px
-}
-
-.feature-title {
-    font-weight: 500;
-    margin-bottom: 15px
-}
-
-.feature-title a {
-    color: var(--chalk);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s
-}
-
-.feature-title a:hover {
-    color: var(--primary-light)
-}
-
-.feature-price {
-    font-size: 22px;
-    font-weight: 700;
-    font-family: sans-serif;
-    color: var(--primary-light);
-    margin-right: 30px
-}
-
-.feature-price small {
-    font-size: 15px;
-    font-weight: 400;
-    margin-left: 3px;
-    letter-spacing: 0.3px;
-    text-transform: capitalize
-}
-
-.feature-time {
-    font-size: 15px;
-    color: var(--border);
-    letter-spacing: 0.3px;
-    white-space: nowrap
-}
-
-.feature-time i {
-    margin-right: 5px
-}
-
-.feature-thumb {
-    cursor: pointer;
-    margin: 0px 6px;
-    border-radius: 8px;
-    border: 2px solid var(--white)
-}
-
-.feature-thumb img {
-    width: 100%;
-    border-radius: 8px;
-    border: 3px solid var(--white)
-}
-
-.feature-thumb.slick-center {
-    border: 2px solid var(--primary) !important
-}
-
-.ad-feature-slider {
-    margin-bottom: 30px
-}
-
-.ad-feature-slider .feature-card {
-    margin: 0px 10px;
-    opacity: 0.5
-}
-
-.ad-feature-slider .slick-center {
-    opacity: 1
-}
-
-@media (max-width: 400px) {
-    .ad-feature-slider .feature-card {
-        margin: 0px
-    }
+.intro-part .section-center-heading p {
+    color: var(--white);
+    margin-bottom: 45px
 }
 
 @media (max-width: 575px) {
-    .feature-content {
-        position: inherit;
-        padding: 15px 15px 15px;
-        background: var(--heading);
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px
-    }
-    .feature-img img {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px
-    }
-    .feature-wish {
-        top: 15px;
-        right: 15px
-    }
-    .feature-title {
-        font-size: 18px;
-        line-height: 26px
-    }
-    .feature-meta {
-        display: flex;
-        flex-direction: column
-    }
-    .feature-price {
-        margin: 0px 0px 5px
+    .intro-part .section-center-heading h2 {
+        font-size: 28px;
+        line-height: 36px
     }
 }
 
-.city-card {
-    overflow: hidden;
-    position: relative;
+@media (max-width: 767px) {
+    .intro-part {
+        margin-top: 60px;
+        padding: 50px 0px 365px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .intro-part {
+        margin-top: 80px;
+        padding: 70px 0px 385px
+    }
+}
+
+
+/********************
+    Pricing  Section
+********************/
+
+.price-part {
+    background-color: var(--chalk);
+    padding: 80px 0;
+}
+
+.pricingTable {
     text-align: center;
-    margin-bottom: 22px;
-    border-radius: 8px;
-    height: 230px;
-    width: 100%
+    box-shadow: 2px 3px 5px var(--dark);
 }
 
-.city-card:hover .city-content {
-    bottom: 25px
-}
-
-.city-card:hover .city-content p {
-    opacity: 1
-}
-
-.city-card::before {
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    background: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 90%);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s
-}
-
-.city-content {
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    z-index: 1;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s
-}
-
-.city-content h4 {
-    font-weight: 500;
-    color: var(--white);
-    text-transform: capitalize
-}
-
-.city-content p {
-    opacity: 0;
-    color: var(--white);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s
-}
-
-@media (min-width: 400px) and (max-width: 575px) {
-    .city-card {
-        width: 370px;
-        margin: 0px auto 22px
-    }
-}
-
-.category-card {
-    overflow: hidden;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    background: var(--chalk);
-    border: 1px solid var(--border);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s
-}
-
-.category-card:hover {
-    background: var(--white);
-    box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.1)
-}
-
-.category-head {
-    position: relative
-}
-
-.category-head img {
-    width: 100%;
-    height: auto
-}
-
-.category-content {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: linear-gradient(rgba(0, 69, 187, 0.5), rgba(8, 2, 41, 0.5))
-}
-
-.category-content h4 {
-    text-transform: capitalize;
-    color: var(--chalk);
-    margin-bottom: 5px;
-    font-weight: 500;
-    opacity: 1
-}
-
-.category-content p {
-    font-size: 14px;
-    line-height: 14px;
-    color: var(--chalk)
-}
-
-.category-list {
-    padding: 12px 20px
-}
-
-.category-list li {
-    border-bottom: 1px solid var(--border)
-}
-
-.category-list li:last-child {
-    border-bottom: none
-}
-
-.category-list li a {
-    padding: 12px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between
-}
-
-.category-list li a:hover h6,
-.category-list li a:hover p {
-    color: var(--primary)
-}
-
-.category-list li a h6 {
-    font-size: 15px;
-    text-transform: capitalize
-}
-
-.category-list li a p {
-    font-size: 14px;
-    line-height: 14px;
-    color: var(--heading)
-}
-
-@media (min-width: 350px) and (max-width: 575px) {
-    .category-card {
-        width: 320px;
-        margin: 0px auto 30px
-    }
-}
-
-.price-card {
-    padding: 55px 50px 40px;
-    background: var(--white);
-    border-radius: 8px;
-    border: 2px solid var(--white);
-    box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+.pricingTable .pricingTable-header {
+    padding: 30px 0;
+    background: #4d4d4d;
     position: relative;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s
+    transition: all .3s ease 0s
 }
 
-.price-card:hover {
-    border-color: var(--primary)
+.pricingTable:hover .pricingTable-header {
+    background: #09b2c6
 }
 
-.price-head {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--border)
+.pricingTable .active .pricingTable-header {
+    background: #09b2c6;
 }
 
-.price-head i {
-    font-size: 50px;
-    line-height: 50px;
-    display: inline-block;
+.pricingTable .pricingTable-header:after,
+.pricingTable .pricingTable-header:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #d9d9d8;
     position: absolute;
-    top: 15px;
-    right: 15px;
-    color: var(--primary)
+    bottom: 12px
 }
 
-.price-head h3 {
-    font-size: 40px;
-    font-family: sans-serif;
-    color: var(--primary);
-    margin-bottom: 20px;
-    letter-spacing: -0.5px
+.pricingTable .pricingTable-header:before {
+    left: 40px
 }
 
-.price-head h4 {
+.pricingTable .pricingTable-header:after {
+    right: 40px
+}
+
+.pricingTable .heading {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0
+}
+
+.pricingTable .price-value {
+    display: inline-block;
+    position: relative;
+    font-size: 55px;
+    font-weight: 700;
+    color: #09b1c5;
+    transition: all .3s ease 0s
+}
+
+.pricingTable:hover .price-value {
+    color: #fff
+}
+
+.pricingTable .currency {
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 6px;
+    left: -19px
+}
+
+.pricingTable .month {
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    right: -30px;
     text-transform: uppercase
 }
 
-.price-list {
-    margin-bottom: 42px
+.pricingTable .pricing-content {
+    padding-top: 50px;
+    background: #fff;
+    position: relative
 }
 
-.price-list li {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 20px 0px
+.pricingTable .pricing-content:after,
+.pricingTable .pricing-content:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #7c7c7c;
+    position: absolute;
+    top: 12px
 }
 
-.price-list li i {
-    color: var(--primary);
-    margin-right: 12px;
-    font-size: 14px;
-    margin-top: 6px
+.pricingTable .pricing-content:before {
+    left: 40px
 }
 
-.price-list li p {
-    color: var(--gray)
+.pricingTable .pricing-content:after {
+    right: 40px
 }
 
-.price-btn .btn {
-    padding: 12px 30px
+.pricingTable .pricing-content ul {
+    padding: 0 20px;
+    margin: 0;
+    list-style: none
 }
 
-.price-active {
-    border-color: var(--primary)
+.pricingTable .pricing-content ul:after,
+.pricingTable .pricing-content ul:before {
+    content: "";
+    width: 8px;
+    height: 46px;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, #818282 50%, #727373 50%);
+    position: absolute;
+    top: -22px;
+    z-index: 1;
+    box-shadow: 0 0 5px #707070;
+    transition: all .3s ease 0s
 }
 
-@media (max-width: 991px) {
-    .price-card {
-        margin-bottom: 30px
-    }
+.pricingTable:hover .pricing-content ul:after,
+.pricingTable:hover .pricing-content ul:before {
+    background: linear-gradient(to bottom, #40c4db 50%, #34bacc 50%)
 }
 
-@media (max-width: 575px) {
-    .price-card {
-        padding: 55px 30px 40px
-    }
+.pricingTable .pricing-content ul:before {
+    left: 44px
 }
 
-@media (min-width: 350px) and (max-width: 575px) {
-    .price-card {
-        width: 320px;
-        margin: 0px auto 30px
-    }
+.pricingTable .pricing-content ul:after {
+    right: 44px
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-    .price-card {
-        width: 380px;
-        margin: 0px auto 30px
-    }
+.pricingTable .pricing-content ul li {
+    font-size: 15px;
+    font-weight: 700;
+    color: #777473;
+    padding: 10px 0;
+    border-bottom: 1px solid #d9d9d8
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    .price-card {
-        padding: 65px 35px 50px
+.pricingTable .pricing-content ul li:last-child {
+    border-bottom: none
+}
+
+.pricingTable .read {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #d9d9d8;
+    padding: 8px 25px;
+    margin: 30px 0;
+    transition: all .3s ease 0s
+}
+
+.pricingTable .read:hover {
+    text-decoration: none
+}
+
+.pricingTable:hover .read {
+    background: #09b1c5
+}
+
+@media screen and (max-width:990px) {
+    .pricingTable {
+        margin-bottom: 25px
     }
 }
 

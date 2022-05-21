@@ -103,3 +103,10 @@ function setActiveTab(item) {
 }
 
 showInfo(clientTabItems[0]); // default active tab
+
+
+//code counter overview
+$('.counter').counterUp({
+    delay: 10,
+    time: 2000
+});
