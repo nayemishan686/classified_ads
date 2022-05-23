@@ -110,3 +110,12 @@ $('.counter').counterUp({
     delay: 10,
     time: 2000
 });
+
+//searchbar code
+$('.category-dropdown').on('click', '.category-change a', function(ev) {
+    if ("#" === $(this).attr('href')) {
+        ev.preventDefault();
+        var parent = $(this).parents('.category-dropdown');
+        parent.find('.change-text').html($(this).html());
+    }
+});

@@ -484,6 +484,171 @@ textarea.form-control {
     HERO SECTION
 *********************************************/
 
+.banner-form {
+    background-color: rgba(0, 0, 0, 0.14);
+    padding: 8px;
+    max-width: 750px;
+    margin: 12px auto;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: -20px;
+}
+
+.banner-form form {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative;
+}
+
+.home-one .banner-form form {
+    border: 0;
+}
+
+.category-dropdown {
+    background-color: #fff;
+    border-right: 1px solid #e6e6e6;
+    border-radius: 5px 0px 0px 5px;
+    min-width: 200px;
+    line-height: 45px;
+    text-align: left;
+}
+
+.category-dropdown span.change-text {
+    display: block;
+    padding: 1px 20px;
+}
+
+.category-dropdown i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.price-range .category-dropdown i {
+    right: -10px;
+    margin-top: 0;
+}
+
+.category-dropdown a {
+    font-size: 16px;
+    margin: 0;
+    color: var(--dark);
+    border: none;
+    border-radius: 5px 0 0 5px;
+    text-transform: capitalize;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    padding: 0px 10px 0px 10px;
+}
+
+.banner-form input {
+    min-width: 375px;
+    padding: 0 18px 0;
+    margin: 0;
+    border-radius: 0;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    border: none;
+    margin-left: -4px;
+}
+
+.banner-form .form-control,
+.banner-form .category-dropdown {
+    display: inline-block;
+    width: 30%;
+    height: 46px;
+    font-size: 16px;
+}
+
+.banner-form button.form-control {
+    position: absolute;
+    right: -2px;
+    bottom: -1px;
+    max-width: 140 px;
+    background-color: var(--primary);
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    text-transform: uppercase;
+    border-color: var(--primary);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 49px;
+    cursor: pointer;
+}
+
+.banner-form button:hover {
+    background-color: #0072bc;
+    border-color: #0072bc;
+}
+
+.banner-form input[type="submit"] {
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+@media(min-width:1400px) {
+    .banner-form button.form-control {
+        height: 49px
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .banner-form .form-control,
+    .banner-form .category-dropdown {
+        height: 45px
+    }
+    .banner-form button.form-control {
+        height: 49px
+    }
+    .banner-form-full.banner-form input,
+    .home-two .banner-form-full.banner-form input,
+    .home-three .banner-form-full.banner-form input {
+        min-width: 334px
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .banner-form input {
+        min-width: 355px
+    }
+    .banner-form .form-control,
+    .banner-form .category-dropdown {
+        height: 44px
+    }
+    .banner-form button.form-control {
+        height: 48px
+    }
+}
+
+@media(max-width:767px) {
+    .banner-form .form-control,
+    .banner-form .category-dropdown {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        border-radius: 4px;
+        margin-left: 0;
+        border-bottom: 1px solid #e6e6e6;
+        border-right: 0
+    }
+    .banner-form button.form-control {
+        margin-bottom: 0;
+        position: inherit;
+        right: 0;
+        top: 0
+    }
+    .banner-form button.form-control {
+        margin-left: 0;
+        border-radius: 4px
+    }
+}
+
 
 /*********************************************
     CATEGORY SECTION
@@ -591,7 +756,7 @@ textarea.form-control {
 
 .counter-overview {
     padding: 60px 0;
-    background: linear-gradient( #457fca, #5691c8);
+    background: linear-gradient(#457fca, #5691c8);
 }
 
 .counter-details {
